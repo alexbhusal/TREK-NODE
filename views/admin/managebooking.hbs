@@ -1,0 +1,18 @@
+{{>adminheader}}
+
+{{#each booking}}
+<div class="mx-5 mt-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Booking ID:{{id}}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Username: {{name}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Place:{{place}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Booked Date: {{date}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Payment Mode:{{payment}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Mobile Number:{{phone}}</h6>
+    <a href="/admin-editbooking/{{this.id}}" class="card-link btn btn-success">Edit</a>
+    <a href="/admin-deletebooking/{{this.id}}" class="card-link btn btn-danger">Delete</a>
+  </div>
+</div>
+</div>
+{{/each}}

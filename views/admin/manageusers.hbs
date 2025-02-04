@@ -1,0 +1,14 @@
+{{>adminheader}}
+
+{{#each users}}
+<div class="mx-5 mt-2">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{username}}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">{{email}}</h6>
+    <a href="edit/{{this.user_id}}" class="card-link btn btn-success">Edit</a>
+    <a href="/delete/{{this.user_id}}" class="card-link btn btn-danger">Delete</a>
+  </div>
+</div>
+</div>
+{{/each}}

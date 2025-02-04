@@ -1,0 +1,19 @@
+{{>userheader}}
+{{#each bookings}}
+<div class="mx-5 mt-2">
+<div class="card" style="width: 25rem;">
+  <div class="card-body">
+    <h5 class="card-title text-success">Booking ID:{{id}}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Username: {{name}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Place:{{place}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Booked Date: {{date}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Payment Mode:{{payment}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Mobile Number:{{phone}}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Transection on: {{tdate}}</h6>
+    <a href="/editbooking/{{this.id}}" class="card-link btn btn-success">Edit</a>
+    <a href="/deletebooking/{{this.id}}" class="card-link btn btn-danger">Cancel</a>
+  </div>
+</div>
+</div>
+{{/each}}
+{{>footer}}

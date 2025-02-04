@@ -1,0 +1,32 @@
+{{>header}}
+<h1 style="text-align: center;">Sign Up</h1>
+    {{#if errors}}
+        <div>
+            <ul>
+                {{#each errors}}
+                    <li>{{ this.msg }}</li>
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+    {{#if error}}
+        <div>{{ error }}</div>
+    {{/if}}
+<form class="mx-5 my-5" method="post">
+  <div class="form-floating mb-3">
+  <input type="text" class="form-control" name="username" id="floatingInput" placeholder="abcdef">
+  <label for="floatingInput">Username</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+<input type="submit" name="" value="SignUp" class="btn btn-primary my-2" id="">
+</form>
+<div class="text-center">
+    <p>already a member? <a href="/login">Login</a></p>
+</div>

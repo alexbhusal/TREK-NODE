@@ -1,0 +1,18 @@
+<form class="mx-5 my-5"  method="post">
+  <div class="form-floating mb-3">
+  <input type="text" class="form-control" name="username" value="{{booking.name}}" id="floatingInput" placeholder="abcdef" readonly>
+  <label for="floatingInput">Username</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" name="place" id="floatingInput" value="{{booking.place}}" required >
+  <label for="floatingInput">place</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="date" class="form-control" name="date" id="floatingInput" value="{{booking.date}}" required>
+</div>
+<div class="form-floating mb-3">
+  <input type="tel" class="form-control" name="phone" id="floatingInput" value="{{booking.phone}}" required>
+  <label for="floatingInput">Mobile number</label>
+</div>
+<input type="submit" name="" value="Update" class="btn btn-primary my-2" id="">
+</form>

@@ -1,0 +1,12 @@
+{{>adminheader}}
+<form class="mx-5 my-5"  method="post">
+  <div class="form-floating mb-3">
+  <input type="text" class="form-control" name="username" value="{{user.username}}" id="floatingInput" placeholder="abcdef">
+  <label for="floatingInput">Username</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" name="email" id="floatingInput" value="{{user.email}}" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<input type="submit" name="" value="Update" class="btn btn-primary my-2" id="">
+</form>
